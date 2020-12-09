@@ -1,5 +1,3 @@
-use testground;
-
 #[cfg(tests)]
 #[test]
 fn is_ok() {

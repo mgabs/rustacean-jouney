@@ -1,0 +1,38 @@
+{
+  repository(name: "material-ui", owner: "mui-org") {
+    pullRequests(first: 1,states:OPEN, orderBy: {field: CREATED_AT, direction: ASC}) {
+      totalCount
+        nodes {
+          title
+            state
+            author {
+              login
+            }
+          ceatedAt
+        }
+    }
+  }
+}
+
+
+-- response
+
+{
+  "data": {
+    "repository": {
+      "pullRequests": {
+        "totalCount": 22,
+          "nodes": [
+          {
+            "title": "[Menu] Support Cascading Menus",
+            "state": "OPEN",
+            "author": {
+              "login": "EsoterikStare"
+            },
+            "createdAt": "2020-04-16T16:04:32Z"
+          }
+          ]
+      }
+    }
+  }
+}

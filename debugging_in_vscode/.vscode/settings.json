@@ -1,0 +1,4 @@
+{
+    "rustTestExplorer.rootCargoManifestFilePath": "${workspaceFolder}/Cargo.toml",
+    "git.autofetch": true
+}
